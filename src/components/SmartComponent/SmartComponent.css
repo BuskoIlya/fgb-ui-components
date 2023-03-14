@@ -1,0 +1,43 @@
+@import '../../styles/constants.css';
+
+.SmartComponent {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  color: var(--fgbui-black);
+}
+
+.SmartComponent_blue { color: var(--fgbui-blue) }
+.SmartComponent_green { color: var(--fgbui-green) }
+.SmartComponent_red { color: var(--fgbui-red) }
+.SmartComponent_yellow { color: var(--fgbui-yellow) }
+
+.SmartComponent::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -150%;
+  display: inline-block;
+
+  width: 150%;
+  height: 250%;
+
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transition: all .5s linear;
+}
+
+.SmartComponent_blue::after { background-color: var(--fgbui-blue) }
+.SmartComponent_green::after { background-color: var(--fgbui-green) }
+.SmartComponent_red::after { background-color: var(--fgbui-red) }
+.SmartComponent_yellow::after { background-color: var(--fgbui-yellow) }
+
+.SmartComponent:hover { color: white }
+
+.SmartComponent_blue:hover { background-color: var(--fgbui-dark-blue) }
+.SmartComponent_green:hover { background-color: var(--fgbui-dark-green) }
+.SmartComponent_red:hover { background-color: var(--fgbui-dark-red) }
+.SmartComponent_yellow:hover { background-color: var(--fgbui-dark-yellow) }
+
+.SmartComponent:hover::after { left: -50% }

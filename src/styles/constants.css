@@ -1,0 +1,20 @@
+:root {
+  /* Цвета */
+  --fgbui-black: #2a2a2a;
+  --fgbui-blue: #3fb2e6;
+  --fgbui-disabled-color: #c2c4c7;
+  --fgbui-green: #3aaa35;
+  --fgbui-grey: #d5d7d9;
+  --fgbui-purple: #800080;
+  --fgbui-red: #e41f1e;
+  --fgbui-yellow: #ffde00;
+
+  --fgbui-dark-black: #2a2a2a;
+  --fgbui-dark-blue: rgba(63, 178, 230, .75);
+  --fgbui-disabled-color: #c2c4c7;
+  --fgbui-dark-green: rgba(58, 170, 53, .75);
+  --fgbui-dark-grey: #d5d7d9;
+  --fgbui-dark-purple: #800080;
+  --fgbui-dark-red: rgba(228, 31, 30, .75);
+  --fgbui-dark-yellow: rgba(255, 222, 0, .75);
+}

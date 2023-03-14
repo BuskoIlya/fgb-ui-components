@@ -1,0 +1,21 @@
+@import '../../styles/constants.css';
+
+.Button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+
+  border: solid 1px;
+  border-radius: 0.125rem;
+  background-color: white;
+  cursor: default;
+}
+
+.Button[disabled] {
+  color: var(--fgbui-disabled-color);
+  cursor: not-allowed;
+  pointer-events: none;
+}
