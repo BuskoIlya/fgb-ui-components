@@ -1,2 +1,5 @@
-export { Button } from './components/Button/index';
-export type { ButtonProps } from './components/Button/index';
+export { Button } from './components/Button';
+export type { ButtonProps } from './components/Button';
+
+export { TitleCountry } from './components/TitleCountry';
+export type { TitleCountryProps } from './components/TitleCountry';

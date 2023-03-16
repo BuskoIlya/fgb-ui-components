@@ -1,0 +1,14 @@
+.TitleCountry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+
+  width: fit-content;
+  padding: 0 1em;
+}
+
+.TitleCountry__img {
+  max-width: 1.5em;
+  height: 1em;
+}
