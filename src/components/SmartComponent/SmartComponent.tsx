@@ -2,6 +2,7 @@ import * as React from "react";
 import './SmartComponent.css';
 
 export interface SmartComponentProps {
+  active?: boolean,
   children?: React.ReactNode,
   className?: string,
   color: 'blue' | 'green' | 'red' | 'yellow',
@@ -9,18 +10,15 @@ export interface SmartComponentProps {
 }
 
 export function SmartComponent ({
-  children,
-  className,
-  color,
-  Tag = 'div',
-  ...props
+  active, children, className, color, Tag = 'div', ...props
 }: SmartComponentProps) {
 
-  let classes = [
+  className = [
     'SmartComponent',
     `SmartComponent_${color}`,
+    ...(active ? [`SmartComponent_active_${color}`] : []),
     className
   ].join(' ');
 
-  return <Tag className={classes} {...props}>{children}</Tag>;
+  return <Tag className={className} {...props}>{children}</Tag>;
 }

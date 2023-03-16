@@ -8,11 +8,13 @@ export interface ButtonProps extends Omit<SmartComponentProps, 'Tag'> {
 }
 
 export const Button = ({
-  startIcon, endIcon, children, color, ...props
+  startIcon, endIcon, children, className, color, ...props
 }: ButtonProps) => {
 
+  className = ['Button', ...(className ? [className] : [])].join(' ');
+
   return (
-    <SmartComponent className='Button' color={color} Tag='button' {...props}>
+    <SmartComponent className={className} color={color} Tag='button' {...props}>
       {startIcon}
       {children}
       {endIcon}

@@ -5,6 +5,7 @@
   z-index: 0;
   overflow: hidden;
   color: var(--fgbui-black);
+  background-color: white;
 }
 
 .SmartComponent_blue { color: var(--fgbui-blue) }
@@ -41,3 +42,27 @@
 .SmartComponent_yellow:hover { background-color: var(--fgbui-dark-yellow) }
 
 .SmartComponent:hover::after { left: -50% }
+
+.SmartComponent_active_blue {
+  background-color: var(--fgbui-dark-blue);
+  color: white;
+}
+.SmartComponent_active_blue::after { left: -50% }
+
+.SmartComponent_active_green {
+  background-color: var(--fgbui-dark-green);
+  color: white;
+}
+.SmartComponent_active_green::after { left: -50% }
+
+.SmartComponent_active_red {
+  background-color: var(--fgbui-dark-red);
+  color: white;
+}
+.SmartComponent_active_red::after { left: -50% }
+
+.SmartComponent_active_yellow {
+  background-color: var(--fgbui-dark-yellow);
+  color: white;
+}
+.SmartComponent_active_yellow::after { left: -50% }

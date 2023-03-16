@@ -3,19 +3,19 @@
 .Button {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.5em;
 
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
+  font-size: 1em;
+  padding: 0.5em 1em;
 
   border: solid 1px;
-  border-radius: 0.125rem;
-  background-color: white;
+  border-radius: 0.125em;
   cursor: default;
+  transition: background-color .3s linear;
 }
 
 .Button[disabled] {
   color: var(--fgbui-disabled-color);
-  cursor: not-allowed;
   pointer-events: none;
 }
