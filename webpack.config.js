@@ -2,17 +2,15 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: {
-    main: path.resolve(__dirname, 'src/fgbui.js')
-  },
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: 'index.js',
     libraryTarget: 'umd',
     clean: true
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.ts', '.tsx']
   },
   externals: {
     react: 'react'
@@ -24,18 +22,9 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.[tj]sx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react',
-              '@babel/preset-typescript'
-            ]
-          }
-        }
+        exclude: /node-modules/,
+        test: /\.(ts|tsx)?$/,
+        use: ['ts-loader']
       }
     ]
   }
