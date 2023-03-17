@@ -1,18 +1,12 @@
 @import '../../styles/constants.css';
 
 .Button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-
   font-size: 1em;
   padding: 0.5em 1em;
 
   border: solid 1px;
   border-radius: 0.125em;
   cursor: default;
-  transition: background-color .3s linear;
 }
 
 .Button[disabled] {

@@ -6,11 +6,13 @@ export interface SmartComponentProps {
   children?: React.ReactNode,
   className?: string,
   color: 'blue' | 'green' | 'red' | 'yellow',
+  iconAfter?: React.ReactNode
+  iconBefore?: React.ReactNode,
   Tag: React.ElementType
 }
 
 export function SmartComponent ({
-  active, children, className, color, Tag = 'div', ...props
+  active, children, className, color, iconAfter, iconBefore, Tag = 'div', ...props
 }: SmartComponentProps) {
 
   className = [
@@ -20,5 +22,11 @@ export function SmartComponent ({
     className
   ].join(' ');
 
-  return <Tag className={className} {...props}>{children}</Tag>;
+  return (
+    <Tag className={className} {...props}>
+      {iconBefore}
+      {children}
+      {iconAfter}
+    </Tag>
+  );
 }
