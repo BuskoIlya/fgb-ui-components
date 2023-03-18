@@ -1,0 +1,17 @@
+@import '../../styles/constants.css';
+
+.LinkMenu {
+  width: 100%;
+  color: var(--fgbui-black);
+  text-decoration: none;
+}
+
+.LinkMenu_level-1 {
+  padding: 16px 24px;
+  font-size: 1.2rem;
+}
+
+.LinkMenu_level-2 {
+  padding: 16px 16px 16px 24px;
+  justify-content: left;
+}

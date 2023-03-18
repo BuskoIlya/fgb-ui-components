@@ -52,26 +52,32 @@
 
 .SmartComponent:hover::after { left: -50% }
 
-.SmartComponent_active_blue {
+.SmartComponent_blue_active {
   background-color: var(--fgbui-dark-blue);
   color: white;
 }
-.SmartComponent_active_blue::after { left: -50% }
+.SmartComponent_blue_active::after { left: -50% }
 
-.SmartComponent_active_green {
+.SmartComponent_green_active {
   background-color: var(--fgbui-dark-green);
   color: white;
 }
-.SmartComponent_active_green::after { left: -50% }
+.SmartComponent_green_active::after { left: -50% }
 
-.SmartComponent_active_red {
+.SmartComponent_red_active {
   background-color: var(--fgbui-dark-red);
   color: white;
 }
-.SmartComponent_active_red::after { left: -50% }
+.SmartComponent_red_active::after { left: -50% }
 
-.SmartComponent_active_yellow {
+.SmartComponent_red.active {
+  background-color: var(--fgbui-dark-red);
+  color: white;
+}
+.SmartComponent_red.active::after { left: -50% }
+
+.SmartComponent_yellow_active {
   background-color: var(--fgbui-dark-yellow);
   color: white;
 }
-.SmartComponent_active_yellow::after { left: -50% }
+.SmartComponent_yellow_active::after { left: -50% }

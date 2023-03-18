@@ -13,5 +13,8 @@ export type { LinkExternalProps } from './components/Links';
 export { LinkInner } from './components/Links';
 export type { LinkInnerProps } from './components/Links';
 
+export { LinkMenu } from './components/Links';
+export type { LinkMenuProps } from './components/Links';
+
 export { TitleCountry } from './components/TitleCountry';
 export type { TitleCountryProps } from './components/TitleCountry';

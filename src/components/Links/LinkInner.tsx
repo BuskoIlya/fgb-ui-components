@@ -2,7 +2,7 @@ import * as React from "react";
 import { SmartComponent, SmartComponentProps } from "../SmartComponent";
 
 export interface LinkInnerProps
-  extends Omit<SmartComponentProps, 'active' | 'className' | 'color'>
+  extends Omit<SmartComponentProps, 'isActive' | 'className' | 'color'>
 {
   children?: string,
   to: string

@@ -3,7 +3,7 @@ import { SmartComponent, SmartComponentProps } from "../SmartComponent";
 import './CardTitle.css';
 
 export interface CardTitleProps
-  extends Omit<SmartComponentProps, 'active' | 'className'>
+  extends Omit<SmartComponentProps, 'isActive' | 'className'>
 {
   children?: string,
   to: string

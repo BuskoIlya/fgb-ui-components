@@ -2,7 +2,7 @@ import * as React from 'react';
 import './TitleCountry.css';
 
 /**
- * text - это название страны, города или фио игрока
+ * @text - это название страны, города или фио игрока
  */
 export interface TitleCountryProps {
   flagImg?: string,

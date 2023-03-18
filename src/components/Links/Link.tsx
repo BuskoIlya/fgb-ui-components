@@ -2,7 +2,7 @@ import * as React from "react";
 import { SmartComponent, SmartComponentProps } from "../SmartComponent";
 
 export interface LinkProps
-  extends Omit<SmartComponentProps, 'active' | 'className' | 'color' | 'Tag'>
+  extends Omit<SmartComponentProps, 'isActive' | 'className' | 'color' | 'Tag'>
 {
   download?: boolean,
   children?: string,
