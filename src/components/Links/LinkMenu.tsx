@@ -1,5 +1,5 @@
-import * as React from "react";
-import { SmartComponent, SmartComponentProps } from "../SmartComponent";
+import * as React from 'react';
+import { SmartComponent, SmartComponentProps } from '../SmartComponent';
 import './LinkMenu.css';
 
 /**
@@ -9,7 +9,7 @@ import './LinkMenu.css';
  *
  * @isFirstLevel означает, что данный линк в меню относится к самому
  * верхнему уровню: они имеют красный цвет, большие размеры и состояние
- * isActive.
+ * "выбран".
  */
 export interface LinkMenuProps
   extends Omit<SmartComponentProps, 'className' | 'color'>

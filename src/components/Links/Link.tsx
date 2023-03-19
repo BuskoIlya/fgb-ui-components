@@ -1,5 +1,5 @@
-import * as React from "react";
-import { SmartComponent, SmartComponentProps } from "../SmartComponent";
+import * as React from 'react';
+import { SmartComponent, SmartComponentProps } from '../SmartComponent';
 
 export interface LinkProps
   extends Omit<SmartComponentProps, 'isActive' | 'className' | 'color' | 'Tag'>
@@ -19,5 +19,5 @@ export interface LinkProps
  */
 export const Link = ({ children, ...props}: LinkProps) => {
 
-  return <SmartComponent color='blue' Tag='a' {...props}>{children}</SmartComponent>;
+  return <SmartComponent color="blue" Tag="a" {...props}>{children}</SmartComponent>;
 }

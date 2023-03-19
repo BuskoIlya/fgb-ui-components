@@ -10,10 +10,7 @@ export interface TitleCountryProps {
   text?: string
 }
 
-export const TitleCountry = ({
-  flagImg, flagTitle, text
-}: TitleCountryProps) => {
-
+export const TitleCountry = ({ flagImg, flagTitle, text }: TitleCountryProps) => {
   return (
     <div className="TitleCountry">
       <img className="TitleCountry__img" src={flagImg} title={flagTitle} alt="" />

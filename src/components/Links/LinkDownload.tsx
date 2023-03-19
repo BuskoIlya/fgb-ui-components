@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Link, LinkProps } from "./Link";
+import * as React from 'react';
+import { Link, LinkProps } from './Link';
 
 export interface LinkDownloadProps extends Omit<LinkProps, 'target'> {}
 

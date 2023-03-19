@@ -1,4 +1,9 @@
-import * as React from "react";
+/*
+  Данный компонент используется такими компонентами как:
+  Button, CardTitle, Links
+ */
+
+import * as React from 'react';
 import './SmartComponent.css';
 
 export interface SmartComponentProps {
