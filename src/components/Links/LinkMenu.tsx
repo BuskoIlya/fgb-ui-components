@@ -17,7 +17,7 @@ export interface LinkMenuProps
   children?: string,
   isFirstLevel: boolean,
   to: string
-}
+};
 
 export const LinkMenu = ({ children, isFirstLevel, ...props }: LinkMenuProps) => {
 
@@ -32,4 +32,4 @@ export const LinkMenu = ({ children, isFirstLevel, ...props }: LinkMenuProps) =>
       {children}
     </SmartComponent>
   );
-}
+};

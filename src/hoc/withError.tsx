@@ -8,4 +8,4 @@ export const withError = <T extends object> (Component: React.ComponentType<T>) 
         <Component {...props as T} />
     );
   }
-}
+};

@@ -11,4 +11,4 @@ export const withNoData = <T extends object> (Component: React.ComponentType<T>)
           <Component {...props as T} />
     );
   }
-}
+};

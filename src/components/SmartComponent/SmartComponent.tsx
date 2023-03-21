@@ -14,7 +14,7 @@ export interface SmartComponentProps {
   iconBefore?: React.ReactNode,
   isActive?: boolean,
   Tag: React.ElementType
-}
+};
 
 export function SmartComponent ({
   children, className, color, iconAfter, iconBefore, isActive, Tag = 'div', ...props
@@ -34,4 +34,4 @@ export function SmartComponent ({
       {iconAfter}
     </Tag>
   );
-}
+};

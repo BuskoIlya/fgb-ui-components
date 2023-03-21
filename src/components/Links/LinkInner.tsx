@@ -6,9 +6,8 @@ export interface LinkInnerProps
 {
   children?: string,
   to: string
-}
+};
 
 export const LinkInner = ({ children, Tag, ...props }: LinkInnerProps) => {
-
   return <SmartComponent color="blue" Tag={Tag} {...props}>{children}</SmartComponent>;
-}
+};

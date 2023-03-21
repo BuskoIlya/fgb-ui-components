@@ -8,7 +8,7 @@ export interface TitleCountryProps {
   flagImg?: string,
   flagTitle?: string,
   text?: string
-}
+};
 
 export const TitleCountry = ({ flagImg, flagTitle, text }: TitleCountryProps) => {
   return (
@@ -17,4 +17,4 @@ export const TitleCountry = ({ flagImg, flagTitle, text }: TitleCountryProps) =>
       {text && <span>{text}</span>}
     </div>
   );
-}
+};

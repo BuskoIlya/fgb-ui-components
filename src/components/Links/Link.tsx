@@ -8,7 +8,7 @@ export interface LinkProps
   children?: string,
   href: string,
   target?: string
-}
+};
 
 /**
  * В проекте есть 3 вида линков:
@@ -18,6 +18,5 @@ export interface LinkProps
  * и ведёт на внутренний ресурс (LinkInner)
  */
 export const Link = ({ children, ...props}: LinkProps) => {
-
   return <SmartComponent color="blue" Tag="a" {...props}>{children}</SmartComponent>;
-}
+};

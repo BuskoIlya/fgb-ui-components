@@ -7,13 +7,12 @@ export interface CardTitleProps
 {
   children?: string,
   to: string
-}
+};
 
 export const CardTitle = ({ children, color, Tag, ...props }: CardTitleProps) => {
-
   return (
     <SmartComponent color={color} className="CardTitle" Tag={Tag} {...props}>
       {children}
     </SmartComponent>
   );
-}
+};

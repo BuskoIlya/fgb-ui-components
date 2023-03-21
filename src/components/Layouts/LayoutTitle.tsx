@@ -4,7 +4,7 @@ import './LayoutTitle.css';
 export interface LayoutTitleProps {
   title: string,
   children?: React.ReactNode
-}
+};
 
 export const LayoutTitle = ({ children, title }: LayoutTitleProps) => {
   return (
@@ -13,4 +13,4 @@ export const LayoutTitle = ({ children, title }: LayoutTitleProps) => {
       {children}
     </div>
   );
-}
+};
