@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 export interface ErrorMessageProps {
-  errorMessage: string
+  error: string
 };
 
-export const ErrorMessage = ({ errorMessage }: ErrorMessageProps) => {
-  return <p>{errorMessage}</p>
+export const ErrorMessage = ({ error }: ErrorMessageProps) => {
+  return <p>{error}</p>
 };

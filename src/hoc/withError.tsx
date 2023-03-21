@@ -2,9 +2,9 @@ import * as React from 'react';
 import { ErrorMessage, ErrorMessageProps } from '../components/ErrorMessage';
 
 export const withError = <T extends object> (Component: React.ComponentType<T>) => {
-  return ({ errorMessage, ...props }: T & ErrorMessageProps) => {
+  return ({ error, ...props }: T & ErrorMessageProps) => {
     return (
-      errorMessage ? <ErrorMessage {...{errorMessage}} /> :
+      error ? <ErrorMessage error={error} /> :
         <Component {...props as T} />
     );
   }
