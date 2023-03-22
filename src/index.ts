@@ -7,6 +7,9 @@ export type { CardTitleProps } from './components/CardTitle';
 export { ErrorMessage } from './components/ErrorMessage';
 export type { ErrorMessageProps } from './components/ErrorMessage';
 
+export { LayoutCard } from './components/Layouts';
+export type { LayoutCardProps } from './components/Layouts';
+
 export { LayoutTitle } from './components/Layouts';
 export type { LayoutTitleProps } from './components/Layouts';
 
