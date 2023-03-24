@@ -7,10 +7,15 @@ export type { CardTitleProps } from './CardTitle';
 export { ErrorMessage } from './ErrorMessage';
 export type { ErrorMessageProps } from './ErrorMessage';
 
-export { LayoutCard } from './Layouts';
-export type { LayoutCardProps } from './Layouts';
-export { LayoutTitle } from './Layouts';
-export type { LayoutTitleProps } from './Layouts';
+export {
+  LayoutCard,
+  LayoutTitle
+} from './Layouts';
+
+export type {
+  LayoutCardProps,
+  LayoutTitleProps
+} from './Layouts';
 
 export {
   LinkDownload,
@@ -28,5 +33,14 @@ export type {
 
 export { Loader } from './Loader';
 
-export { TitleCountry } from './TitleCountry';
-export type { TitleCountryProps } from './TitleCountry';
+export { BlackStone, WhiteStone } from './Stones';
+
+export {
+  TitleCountry,
+  TitleCountryWithStone
+} from './TitleCountry';
+
+export type {
+  TitleCountryProps,
+  TitleCountryWithStoneProps
+} from './TitleCountry';
