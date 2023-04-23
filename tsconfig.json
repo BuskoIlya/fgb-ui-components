@@ -6,10 +6,20 @@
         "lib": ["es2015", "dom"],
         "module": "commonjs",
         "outDir": "./dist/",
-        "target": "es6",
+        "paths": {
+            "common": ["./src/common"],
+            "components": ["./src/components"],
+        },
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ],
         "sourceMap": true,
-        "strict": true
+        "strict": true,
+        "target": "es6"
     },
     "exclude": ["node_modules", "dist"],
-    "include": ["src"]
+    "include": ["src"],
+    "files": ["src/types/declarations.d.ts"]
 }

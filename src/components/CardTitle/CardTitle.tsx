@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SmartComponent, SmartComponentProps } from '../SmartComponent';
+import { SmartComponent, SmartComponentProps } from 'common';
 import './CardTitle.css';
 
 export interface CardTitleProps

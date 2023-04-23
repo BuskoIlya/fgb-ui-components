@@ -1,8 +1,3 @@
-/*
-  Данный компонент используется такими компонентами как:
-  Button, CardTitle, Links
- */
-
 import * as React from 'react';
 import './SmartComponent.css';
 

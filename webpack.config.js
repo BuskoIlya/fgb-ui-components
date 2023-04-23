@@ -10,6 +10,10 @@ module.exports = {
     clean: true
   },
   resolve: {
+    alias: {
+      common: path.resolve(__dirname, 'src/common'),
+      components: path.resolve(__dirname, 'src/components'),
+    },
     extensions: ['.ts', '.tsx']
   },
   externals: {
@@ -19,12 +23,27 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        exclude: /\.module\.css$/,
         use: ['style-loader', 'css-loader']
       },
       {
-        exclude: /node-modules/,
+        test: /\.css$/,
+        include: /\.module\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true
+            }
+          }
+        ]
+      },
+      {
         test: /\.(ts|tsx)?$/,
-        use: ['ts-loader']
+        use: ['ts-loader'],
+        exclude: /node-modules/
       }
     ]
   }

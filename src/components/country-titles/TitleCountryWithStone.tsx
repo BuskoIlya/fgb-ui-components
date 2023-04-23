@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { TitleCountry, TitleCountryProps } from './TitleCountry';
 import './TitleCountryWithStone.css';
-import { BlackStone, WhiteStone } from '../Stones';
+import { BlackStone, WhiteStone } from '../stones';
 
 export interface TitleCountryWithStoneProps extends TitleCountryProps {
   black: boolean

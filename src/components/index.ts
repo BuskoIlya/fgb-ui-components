@@ -10,37 +10,37 @@ export type { ErrorMessageProps } from './ErrorMessage';
 export {
   LayoutCard,
   LayoutTitle
-} from './Layouts';
+} from './layouts';
 
 export type {
   LayoutCardProps,
   LayoutTitleProps
-} from './Layouts';
+} from './layouts';
 
 export {
   LinkDownload,
   LinkExternal,
   LinkInner,
   LinkMenu
-} from './Links';
+} from './links';
 
 export type {
   LinkDownloadProps,
   LinkExternalProps,
   LinkInnerProps,
   LinkMenuProps
-} from './Links';
+} from './links';
 
 export { Loader } from './Loader';
 
-export { BlackStone, WhiteStone } from './Stones';
+export { BlackStone, WhiteStone } from './stones';
 
 export {
   TitleCountry,
   TitleCountryWithStone
-} from './TitleCountry';
+} from './country-titles';
 
 export type {
   TitleCountryProps,
   TitleCountryWithStoneProps
-} from './TitleCountry';
+} from './country-titles';

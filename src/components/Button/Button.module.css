@@ -1,6 +1,6 @@
 @import '../../styles/constants.css';
 
-.Button {
+.button {
   font-size: 1em;
   padding: 0.5em 1em;
 
@@ -9,7 +9,7 @@
   cursor: default;
 }
 
-.Button[disabled] {
+.button[disabled] {
   color: var(--fgbui-disabled-color);
   pointer-events: none;
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Stones.css';
+import './stones.css';
 
 export const BlackStone = () => {
   return <span className="Stones__black-stone">&#9679;</span>
