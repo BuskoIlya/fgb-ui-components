@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SmartComponent, SmartComponentProps } from 'common';
-import './LinkMenu.css';
+import css from './LinkMenu.module.css';
 
 /**
  * Линки в соответствии с элементами меню имеют "два" уровня:
@@ -22,8 +22,8 @@ export interface LinkMenuProps
 export const LinkMenu = ({ children, isFirstLevel, ...props }: LinkMenuProps) => {
 
   const className = [
-    'LinkMenu',
-    (isFirstLevel ? 'LinkMenu_level-1' : 'LinkMenu_level-2')
+    css.menu,
+    (isFirstLevel ? css.level1 : css.level2)
   ].join(' ');
   const color = isFirstLevel ? 'red' : 'green';
 

@@ -1,0 +1,79 @@
+@import '../../styles/constants.css';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+
+  position: relative;
+  z-index: 0;
+
+  width: fit-content;
+  padding: 0 0.5em;
+
+  overflow: hidden;
+  color: var(--fgbui-black);
+  background-color: white;
+}
+
+.wrapper_blue { color: var(--fgbui-blue) }
+.wrapper_green { color: var(--fgbui-green) }
+.wrapper_red { color: var(--fgbui-red) }
+.wrapper_yellow { color: var(--fgbui-yellow) }
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -150%;
+  display: inline-block;
+
+  width: 150%;
+  height: 250%;
+
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transition: background-color, color, left .5s linear;
+}
+
+.wrapper_blue::after { background-color: var(--fgbui-blue) }
+.wrapper_green::after { background-color: var(--fgbui-green) }
+.wrapper_red::after { background-color: var(--fgbui-red) }
+.wrapper_yellow::after { background-color: var(--fgbui-yellow) }
+
+.wrapper:hover { color: white }
+
+.wrapper_blue:hover { background-color: var(--fgbui-dark-blue) }
+.wrapper_green:hover { background-color: var(--fgbui-dark-green) }
+.wrapper_red:hover { background-color: var(--fgbui-dark-red) }
+.wrapper_yellow:hover { background-color: var(--fgbui-dark-yellow) }
+
+.wrapper:hover::after { left: -50% }
+
+.wrapper_blue_active {
+  background-color: var(--fgbui-dark-blue);
+  color: white;
+}
+.wrapper_blue_active::after { left: -50% }
+
+.wrapper_green_active {
+  background-color: var(--fgbui-dark-green);
+  color: white;
+}
+.wrapper_green_active::after { left: -50% }
+
+.wrapper_red_active {
+  background-color: var(--fgbui-dark-red);
+  color: white;
+}
+.wrapper_red_active::after { left: -50% }
+
+.wrapper_red.active::after { left: -50% }
+
+.wrapper_yellow_active {
+  background-color: var(--fgbui-dark-yellow);
+  color: white;
+}
+.wrapper_yellow_active::after { left: -50% }

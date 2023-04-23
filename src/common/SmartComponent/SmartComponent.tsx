@@ -1,4 +1,5 @@
 import * as React from 'react';
+import css from './SmartComponent.module.css';
 import './SmartComponent.css';
 
 export interface SmartComponentProps {
@@ -16,9 +17,10 @@ export function SmartComponent ({
 }: SmartComponentProps) {
 
   className = [
-    'SmartComponent',
-    `SmartComponent_${color}`,
-    ...(isActive ? [`SmartComponent_${color}_active`] : []),
+    css.wrapper,
+    css[`wrapper_${color}`],
+    ...(isActive ? [css[`wrapper_${color}_active`]] : []),
+    `wrapper_${color}`,
     className
   ].join(' ');
 

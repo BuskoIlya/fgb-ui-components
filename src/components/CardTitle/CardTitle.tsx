@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SmartComponent, SmartComponentProps } from 'common';
-import './CardTitle.css';
+import css from './CardTitle.module.css';
 
 export interface CardTitleProps
   extends Omit<SmartComponentProps, 'isActive' | 'className'>
@@ -11,7 +11,7 @@ export interface CardTitleProps
 
 export const CardTitle = ({ children, color, Tag, ...props }: CardTitleProps) => {
   return (
-    <SmartComponent color={color} className="CardTitle" Tag={Tag} {...props}>
+    <SmartComponent color={color} className={css.title} Tag={Tag} {...props}>
       {children}
     </SmartComponent>
   );

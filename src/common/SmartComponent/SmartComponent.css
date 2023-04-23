@@ -1,83 +1,11 @@
-@import '../../styles/constants.css';
+/*
+Временное решение для определения сласса .active NavLink,
+т.к. в *.module.css создаётся произвольное имя класса,
+а нужен .active
 
-.SmartComponent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-
-  position: relative;
-  z-index: 0;
-
-  width: fit-content;
-  padding: 0 0.5em;
-
-  overflow: hidden;
-  color: var(--fgbui-black);
-  background-color: white;
-}
-
-.SmartComponent_blue { color: var(--fgbui-blue) }
-.SmartComponent_green { color: var(--fgbui-green) }
-.SmartComponent_red { color: var(--fgbui-red) }
-.SmartComponent_yellow { color: var(--fgbui-yellow) }
-
-.SmartComponent::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  left: -150%;
-  display: inline-block;
-
-  width: 150%;
-  height: 250%;
-
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
-  transition: background-color, color, left .5s linear;
-}
-
-.SmartComponent_blue::after { background-color: var(--fgbui-blue) }
-.SmartComponent_green::after { background-color: var(--fgbui-green) }
-.SmartComponent_red::after { background-color: var(--fgbui-red) }
-.SmartComponent_yellow::after { background-color: var(--fgbui-yellow) }
-
-.SmartComponent:hover { color: white }
-
-.SmartComponent_blue:hover { background-color: var(--fgbui-dark-blue) }
-.SmartComponent_green:hover { background-color: var(--fgbui-dark-green) }
-.SmartComponent_red:hover { background-color: var(--fgbui-dark-red) }
-.SmartComponent_yellow:hover { background-color: var(--fgbui-dark-yellow) }
-
-.SmartComponent:hover::after { left: -50% }
-
-.SmartComponent_blue_active {
-  background-color: var(--fgbui-dark-blue);
-  color: white;
-}
-.SmartComponent_blue_active::after { left: -50% }
-
-.SmartComponent_green_active {
-  background-color: var(--fgbui-dark-green);
-  color: white;
-}
-.SmartComponent_green_active::after { left: -50% }
-
-.SmartComponent_red_active {
+Используется, чтобы выделить вкладку, окно меню которой открыто
+*/
+.wrapper_red.active {
   background-color: var(--fgbui-dark-red);
   color: white;
 }
-.SmartComponent_red_active::after { left: -50% }
-
-.SmartComponent_red.active {
-  background-color: var(--fgbui-dark-red);
-  color: white;
-}
-.SmartComponent_red.active::after { left: -50% }
-
-.SmartComponent_yellow_active {
-  background-color: var(--fgbui-dark-yellow);
-  color: white;
-}
-.SmartComponent_yellow_active::after { left: -50% }

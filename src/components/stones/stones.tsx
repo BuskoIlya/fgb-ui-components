@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './stones.css';
+import css from './stones.module.css';
 
 export const BlackStone = () => {
-  return <span className="Stones__black-stone">&#9679;</span>
+  return <span className={css.blackStone}>&#9679;</span>
 }
 
 export const WhiteStone = () => {

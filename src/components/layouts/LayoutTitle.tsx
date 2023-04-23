@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './LayoutTitle.css';
+import css from './LayoutTitle.module.css';
 
 export interface LayoutTitleProps {
   title: string,
@@ -8,8 +8,8 @@ export interface LayoutTitleProps {
 
 export const LayoutTitle = ({ children, title }: LayoutTitleProps) => {
   return (
-    <div className="LayoutTitle">
-      <h2 className="LayoutTitle__title">{title}</h2>
+    <div className={css.content}>
+      <h2 className={css.title}>{title}</h2>
       {children}
     </div>
   );

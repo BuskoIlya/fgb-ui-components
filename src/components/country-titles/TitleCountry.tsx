@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './TitleCountry.css';
+import css from './TitleCountry.module.css';
 
 export interface TitleCountryProps {
   img?: string,
@@ -14,8 +14,8 @@ export interface TitleCountryProps {
  */
 export const TitleCountry = ({ img, tooltip, value }: TitleCountryProps) => {
   return (
-    <div className="TitleCountry">
-      <img className="TitleCountry__img" src={img} title={tooltip} alt="" />
+    <div className={css.content}>
+      <img className={css.img} src={img} title={tooltip} alt="" />
       {value && <span>{value}</span>}
     </div>
   );
