@@ -13,8 +13,24 @@
   --fgbui-dark-blue: rgba(63, 178, 230, .75);
   --fgbui-disabled-color: #c2c4c7;
   --fgbui-dark-green: rgba(58, 170, 53, .75);
-  --fgbui-dark-grey: #bec2c9;
+  --fgbui-dark-grey: #d5d7d9;
+  --fgbui-dark-font-grey: #878d9a;
   --fgbui-dark-purple: #800080;
   --fgbui-dark-red: rgba(228, 31, 30, .75);
   --fgbui-dark-yellow: rgba(255, 222, 0, .75);
+
+  --fgbui-light-blue: rgba(63, 178, 230, 0.1);
+  --fgbui-light-green: rgba(58, 170, 53, 0.1);
+  --fgbui-light-red: rgba(228, 31, 30, 0.1);
+  --fgbui-light-yellow: rgba(255, 222, 0, 0.1);
+
+  /* Размеры */
+  --fgbui-block-items-gap: 20px;
+  --fgbui-block-min-width: 360px;
+  --fgbui-mobile-width: 430px;
+  --fgbui-ipad-adaptive-width: 810px;
+  --fgbui-desktop-width: calc(3 * --fgbui-block-min-width + 2 * --fgbui-block-items-gap);
+
+  /* Шрифт */
+
 }

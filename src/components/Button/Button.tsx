@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SmartComponent, SmartComponentProps } from 'common';
-import css from  './Button.module.css';
+import css from './Button.module.css';
 
 export interface ButtonProps extends Omit<SmartComponentProps, 'Tag'> {};
 

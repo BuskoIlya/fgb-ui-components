@@ -1,3 +1,5 @@
+@import '~css/constants.css';
+
 /*
 Временное решение для определения сласса .active NavLink,
 т.к. в *.module.css создаётся произвольное имя класса,
@@ -9,3 +11,4 @@
   background-color: var(--fgbui-dark-red);
   color: white;
 }
+.wrapper_red.active::after { left: -50% }

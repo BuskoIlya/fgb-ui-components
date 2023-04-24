@@ -7,6 +7,9 @@ export type { CardTitleProps } from './CardTitle';
 export { ErrorMessage } from './ErrorMessage';
 export type { ErrorMessageProps } from './ErrorMessage';
 
+export { TextInput } from './inputs';
+export { TextInputProps } from './inputs';
+
 export {
   LayoutCard,
   LayoutTitle
@@ -44,3 +47,6 @@ export type {
   TitleCountryProps,
   TitleCountryWithStoneProps
 } from './country-titles';
+
+export { Tooltip } from './Tooltip';
+export type { TooltipProps } from './Tooltip';

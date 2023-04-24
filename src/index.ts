@@ -10,8 +10,10 @@ export {
   LinkInner,
   LinkMenu,
   Loader,
+  TextInput,
   TitleCountry,
   TitleCountryWithStone,
+  Tooltip,
   WhiteStone
 } from './components';
 
@@ -25,8 +27,10 @@ export type {
   LinkExternalProps,
   LinkInnerProps,
   LinkMenuProps,
+  TextInputProps,
   TitleCountryProps,
-  TitleCountryWithStoneProps
+  TitleCountryWithStoneProps,
+  TooltipProps
 } from './components';
 
 export {

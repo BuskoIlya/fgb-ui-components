@@ -1,4 +1,4 @@
-@import '../../styles/constants.css';
+@import '~css/constants.css';
 
 .button {
   font-size: 1em;
