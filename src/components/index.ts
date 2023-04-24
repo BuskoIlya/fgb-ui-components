@@ -36,6 +36,16 @@ export type {
 
 export { Loader } from './Loader';
 
+export {
+  CharLogo,
+  Logo
+} from './logos';
+
+export type {
+  CharLogoProps,
+  LogoProps
+} from './logos';
+
 export { BlackStone, WhiteStone } from './stones';
 
 export {
