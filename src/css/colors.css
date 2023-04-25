@@ -1,5 +1,4 @@
 :root {
-  /* Цвета */
   --fgbui-black: #2a2a2a;
   --fgbui-blue: #3fb2e6;
   --fgbui-disabled-color: #c2c4c7;
@@ -23,14 +22,4 @@
   --fgbui-light-green: rgba(58, 170, 53, 0.1);
   --fgbui-light-red: rgba(228, 31, 30, 0.1);
   --fgbui-light-yellow: rgba(255, 222, 0, 0.1);
-
-  /* Размеры */
-  --fgbui-block-items-gap: 20px;
-  --fgbui-block-min-width: 360px;
-  --fgbui-mobile-width: 430px;
-  --fgbui-ipad-adaptive-width: 810px;
-  --fgbui-desktop-width: calc(3 * --fgbui-block-min-width + 2 * --fgbui-block-items-gap);
-
-  /* Шрифт */
-
 }

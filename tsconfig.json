@@ -9,6 +9,7 @@
         "paths": {
             "common": ["./src/common"],
             "components": ["./src/components"],
+            "hoc": ["./src/hoc"],
         },
         "plugins": [
             {
