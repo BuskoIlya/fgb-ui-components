@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": "src",
         "declaration": true,
         "esModuleInterop": true,
         "jsx": "react",
@@ -7,9 +8,9 @@
         "module": "commonjs",
         "outDir": "./dist/",
         "paths": {
-            "common": ["./src/common"],
-            "components": ["./src/components"],
-            "hoc": ["./src/hoc"],
+            "@common": ["common"],
+            "@components": ["components"],
+            "@hoc": ["hoc"],
         },
         "plugins": [
             {

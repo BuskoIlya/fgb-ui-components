@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { BlackStone, WhiteStone } from '@common';
 import { TitleCountry, TitleCountryProps } from './TitleCountry';
-import { BlackStone, WhiteStone } from '../stones';
 
 import css from './TitleCountryWithStone.module.css';
 

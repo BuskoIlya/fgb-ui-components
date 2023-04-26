@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SmartComponent, SmartComponentProps } from 'common';
+import { SmartComponent, SmartComponentProps } from '@common';
 
 export interface LinkProps
   extends Omit<SmartComponentProps, 'isActive' | 'className' | 'color' | 'Tag'>

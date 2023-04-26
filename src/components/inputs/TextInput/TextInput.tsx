@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tooltip } from 'components';
+import { Tooltip } from '@components';
 import css from './TextInput.module.css';
 
 export interface TextInputProps {

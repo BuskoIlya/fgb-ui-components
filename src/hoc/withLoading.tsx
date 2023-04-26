@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Loader } from 'components';
+import { Loader } from '@components';
 
 export interface WithLoadingProps {
   isLoading: boolean

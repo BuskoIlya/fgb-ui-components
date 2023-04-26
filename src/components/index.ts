@@ -46,8 +46,6 @@ export type {
   LogoProps
 } from './logos';
 
-export { BlackStone, WhiteStone } from './stones';
-
 export {
   TitleCountry,
   TitleCountryWithStone

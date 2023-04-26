@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ErrorMessage, ErrorMessageProps, Loader } from 'components';
+import { ErrorMessage, ErrorMessageProps, Loader } from '@components';
 import { WithLoadingProps } from './withLoading';
 
 export const withNoData = <T extends object> (Component: React.ComponentType<T>) => {

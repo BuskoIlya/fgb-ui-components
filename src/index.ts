@@ -1,5 +1,6 @@
+export { BlackStone, WhiteStone } from '@common';
+
 export {
-  BlackStone,
   Button,
   CardTitle,
   CharLogo,
@@ -15,9 +16,8 @@ export {
   TextInput,
   TitleCountry,
   TitleCountryWithStone,
-  Tooltip,
-  WhiteStone
-} from 'components';
+  Tooltip
+} from '@components';
 
 export type {
   ButtonProps,
@@ -35,11 +35,11 @@ export type {
   TitleCountryProps,
   TitleCountryWithStoneProps,
   TooltipProps
-} from 'components';
+} from '@components';
 
 export {
   withError,
   withLoading,
   withNoData
-} from 'hoc';
-export type { WithLoadingProps } from 'hoc';
+} from '@hoc';
+export type { WithLoadingProps } from '@hoc';
