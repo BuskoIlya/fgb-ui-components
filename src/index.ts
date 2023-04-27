@@ -1,7 +1,17 @@
-export { BlackStone, WhiteStone } from '@common';
+export {
+  BlackStone,
+  WhiteStone,
+  IconEdit,
+  IconSave,
+  IconXmark,
+} from '@common';
 
 export {
   Button,
+  CancelButton,
+  CloseButton,
+  IconButton,
+  SaveButton,
   CardTitle,
   CharLogo,
   ErrorMessage,
@@ -13,6 +23,7 @@ export {
   LinkMenu,
   Loader,
   Logo,
+  FileInput,
   TextInput,
   TitleCountry,
   TitleCountryWithStone,
@@ -21,6 +32,10 @@ export {
 
 export type {
   ButtonProps,
+  CancelButtonProps,
+  CloseButtonProps,
+  IconButtonProps,
+  SaveButtonProps,
   CardTitleProps,
   CharLogoProps,
   ErrorMessageProps,
@@ -31,6 +46,7 @@ export type {
   LinkInnerProps,
   LinkMenuProps,
   LogoProps,
+  FileInputProps,
   TextInputProps,
   TitleCountryProps,
   TitleCountryWithStoneProps,

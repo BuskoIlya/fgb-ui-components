@@ -1,0 +1,8 @@
+.iconButton {
+  font-size: 1em;
+  padding: 0.25em;
+
+  border: none;
+  border-radius: 0.125em;
+  cursor: default;
+}

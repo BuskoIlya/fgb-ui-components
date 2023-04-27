@@ -1,5 +1,17 @@
-export { Button } from './Button';
-export type { ButtonProps } from './Button';
+export {
+  Button,
+  CancelButton,
+  CloseButton,
+  IconButton,
+  SaveButton
+} from './buttons';
+export type {
+  ButtonProps,
+  CancelButtonProps,
+  CloseButtonProps,
+  IconButtonProps,
+  SaveButtonProps
+} from './buttons';
 
 export { CardTitle } from './CardTitle';
 export type { CardTitleProps } from './CardTitle';
@@ -7,8 +19,14 @@ export type { CardTitleProps } from './CardTitle';
 export { ErrorMessage } from './ErrorMessage';
 export type { ErrorMessageProps } from './ErrorMessage';
 
-export { TextInput } from './inputs';
-export { TextInputProps } from './inputs';
+export {
+  FileInput,
+  TextInput
+} from './inputs';
+export {
+  FileInputProps,
+  TextInputProps
+} from './inputs';
 
 export {
   LayoutCard,

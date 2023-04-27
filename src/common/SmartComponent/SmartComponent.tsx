@@ -9,11 +9,13 @@ export interface SmartComponentProps {
   iconAfter?: React.ReactNode
   iconBefore?: React.ReactNode,
   isActive?: boolean,
+  onClick? : (e: React.MouseEvent) => void,
   Tag: React.ElementType
 };
 
 export function SmartComponent ({
-  children, className, color, iconAfter, iconBefore, isActive, Tag = 'div', ...props
+  children, className, color, iconAfter, iconBefore, isActive,
+  onClick, Tag = 'div', ...props
 }: SmartComponentProps) {
 
   className = [
@@ -25,7 +27,7 @@ export function SmartComponent ({
   ].join(' ');
 
   return (
-    <Tag className={className} {...props}>
+    <Tag className={className} onClick={onClick} {...props}>
       {iconBefore}
       {children}
       {iconAfter}
